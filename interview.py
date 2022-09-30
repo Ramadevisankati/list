@@ -20,7 +20,7 @@ while i<len(y):
     j=0
     while j<len(y):
         if y[i]<y[j]:
-            y[i],y[j+1]=y[j+1],y[i]
+            y[i],y[j]=y[j],y[i]
         j=j+1
     i=i+1
 print(y)
