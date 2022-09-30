@@ -14,16 +14,16 @@ y=[24,49,8,14]
 
 # [2,8,9,11,24,49]
 i=0
-# l=x+y
-while i<len(y):
+l=x+y
+while i<len(l):
     
     j=0
-    while j<len(y):
-        if y[i]<y[j]:
-            y[i],y[j]=y[j],y[i]
+    while j<len(l):
+        if l[i]<l[j]:
+            l[i],l[j]=l[j],l[i]
         j=j+1
     i=i+1
-print(y)
+print(l)
 
 # a=[4,6,3,1,9,24]
 # i=0
