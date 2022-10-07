@@ -1,13 +1,14 @@
-# test_list = ['n','i','t','i','n']
-# reverse = test_list[::-1]
-# res = test_list == reverse
-# if res:
-#     print("palindrome")
-# else:
-#     print("not palindrome")
-    
-string=input(("Enter a value:"))  
-if(string==string[::-1]):  
-      print("The letter is a palindrome")  
-else:  
-      print("The letter is not a palindrome")  
+def isPalindrome(s):
+	x=list(s)
+	y=[]
+	y.extend(x)
+	x.reverse()
+	if(x==y):
+		return True
+	return False
+s =input("enter the name: ")
+ans = isPalindrome(s)
+if ans:
+	print("Yes")
+else:
+	print("No")
